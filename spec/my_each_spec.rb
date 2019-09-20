@@ -11,7 +11,7 @@ describe "my_each" do
   it "does not call on puts" do
     expect(file).to_not include("puts")
   end
-
+yield collection = ['hi', 'hello', 'bye', 'goodbye']
   it "calls on while" do
     expect(file).to include("while")
   end
